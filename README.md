@@ -52,3 +52,47 @@ See the [Sage installation documentation](https://roots.io/sage/docs/installatio
 - Follow [@rootswp on Twitter](https://twitter.com/rootswp)
 - Read the [Roots Blog](https://roots.io/blog/)
 - Subscribe to the [Roots Newsletter](https://roots.io/newsletter/)
+
+
+# Theme Setup Guide
+
+## Installation Instructions
+
+1. **Copy the Repository**
+   - Clone or copy this repository into your WordPress theme directory (`wp-content/themes/`).
+
+2. **Install Dependencies**
+   - Navigate to the theme directory in your terminal and run:
+     ```bash
+     composer install
+     ```
+   - Then install JavaScript dependencies:
+     ```bash
+     yarn
+     ```
+
+3. **Build Assets**
+   - After installing dependencies, build the theme assets by running:
+     ```bash
+     yarn build
+     ```
+
+4. **Activate ACF Pro Plugin**
+   - Go to your WordPress admin panel and activate the **ACF Pro** plugin.
+
+5. **Add Job Categories and Job Offers**
+   - In your WordPress admin panel, navigate to **Oferty Pracy** to add relevant content.
+
+6. **Fix Missing ACF Custom Fields (if needed)**
+   - If you don't see ACF custom fields in the **Oferty Pracy** post type, run the following command:
+     ```bash
+     wp acorn package:discover
+     ```
+
+7. **Add Job Offer Block**
+   - From the WordPress block editor, add the **Job Offer Block** wherever you want it to appear on your site.
+
+---
+
+### Notes:
+- Make sure that ACF fields and job offers are properly set up in the WordPress admin panel before adding the **Job Offer Block**.
